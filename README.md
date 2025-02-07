@@ -77,3 +77,18 @@ ollama serve
 
 Ollama should be running at http://localhost:11434 🚀
 
+Search Result :
+
+![image](https://github.com/user-attachments/assets/4bacddf8-bed2-4709-b4c1-aa2e08d705de)
+
+Search History:
+
+![image](https://github.com/user-attachments/assets/19535e2a-b120-4fb1-9dc8-0d2a686a24e9)
+
+
+
+
+
+
+
+
