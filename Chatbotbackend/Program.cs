@@ -9,7 +9,7 @@ builder.Services.AddHttpClient();
 builder.Services.AddControllers();
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("http://localhost:5175/", builder =>
+    options.AddPolicy("http://localhost:5173/", builder =>
     {
         builder.AllowAnyOrigin()
                .AllowAnyMethod()
@@ -22,7 +22,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       builder =>
                       {
-                          builder.WithOrigins("http://localhost:5175/");
+                          builder.WithOrigins("http://localhost:5173/");
                       });
 });
 
@@ -35,15 +35,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:5175"));
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:5173"));
 app.UseRouting();
 app.MapControllers();
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
 
 app.Run();
 
