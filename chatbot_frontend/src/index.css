@@ -1,0 +1,89 @@
+/* Google Search Page Styling */
+.google-container {
+  text-align: center;
+  margin-top: 10%;
+  font-family: Arial, sans-serif;
+}
+
+/* Google Logo Styling */
+.google-logo {
+  font-size: 60px;
+  font-weight: bold;
+  color: #4285F4;
+  margin-bottom: 20px;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Search Input Field */
+.search-input {
+  width: 500px;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+.search-input:focus {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+/* Search Button */
+.search-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #4285F4;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-button:hover {
+  background-color: #357ae8;
+}
+
+/* Search Results Box */
+.search-results {
+  margin-top: 100px;
+  text-align: left;
+  padding: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result-text {
+  font-size: 18px;
+  color: #202124;
+  font-weight: 500;
+  white-space: pre-line; /* Preserves formatting */
+}
+
+.history-item {
+  background: white;
+  padding: 50px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-left: 5px solid #4285f4;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-history h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
